@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Signup - VEROIR</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class=\"center-nav\">
+    <div class="logo">
+      <img src="logo3.png" alt="logo">
+      <h1>VEROIR</h1>
+    </div>
+    <nav class="center-only"><a href="index.html">Home</a><a href="login.html">Login</a></nav>
+  </header>
+
+  <main class='page-local-nav-fix'>
+
+<div class="center-page">
+
+  <div class="form-card">
+    <h2>Create an account</h2>
+    <form id="signup-form" data-redirect="index.html">
+      <label>Name:<br><input type="text" name="name"></label>
+      <label>Email:<br><input type="email" name="email" required></label>
+      <label>Password:<br><input type="password" name="password" required></label>
+      <div style="height:12px"></div>
+      <button type="submit">Create Account</button>
+    </form>
+    <p>Already have an account? <a href="login.html">Login here</a></p>
+    <p class="text-muted">Create an account to save orders (demo only).</p>
+  </div>
+
+</div>
+
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hoodies - VEROIR</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- PAGE-SPECIFIC OVERRIDES (safe, local to this page) -->
+  <style>
+    /* scope everything to this page so index.html isn't affected */
+    body.hoodies-page {
+      /* if your global body uses any layout, we keep it */
+    }
+
+    /* ensure the fixed header doesn't cut/leave unwanted gap:
+       header is 50px tall in your main CSS; add offset for top content */
+  body.hoodies-page .hero {
+  position: relative;
+  height: 20vh;                     /* keep smaller hero */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
+  background: url('https://images.unsplash.com/photo-1602810318383-e7d5c9b09e8c?auto=format&fit=crop&w=1920&q=80') 
+              no-repeat center center/cover; /* removed dark overlay */
+  color: #222; 
+  margin-top: 55px; /* slightly increase from 50px */
+  /* softer text color for light bg */
+}
+
+    /* make sure hero-content sits nicely */
+   body.hoodies-page .hero-content {
+  background: rgba(255,255,255,0.6);   /* soft white transparency */
+  padding: 15px 50px;
+  border-radius: 50px;
+  max-width: 700px;                    /* increased width */
+  color: #111;
+  margin-top: 0px; /* adds a little breathing space below navbar */
+}
+body.hoodies-page .hero-content h2 {
+  margin-top: 10px;     /* space from top inside the box */
+  margin-bottom: 0px;   /* space between heading and paragraph */
+}
+
+body.hoodies-page .hero-content p {
+  margin-top: 0px;        /* reduce extra top gap (optional) */
+  margin-bottom: 0px;  /* space between paragraph and bottom of box */
+}
+    /* tidy the shop section and remove extra top-gap */
+    body.hoodies-page .shop {
+      padding: 30px 20px;        /* comfortable padding but smaller */
+      max-width: 1200px;
+      margin: 20px auto 60px;    /* center the whole shop area, small top margin */
+      background: rgba(255,255,255,0.35);
+      backdrop-filter: blur(6px);
+      border-radius: 12px;
+      margin-top: 10px; /* smaller top margin instead of 20px */
+      padding-top: 20px; /* reduce top padding */
+    }
+
+    /* center each subsection heading */
+   /* Increase gap between Men's and Women's sections */
+body.hoodies-page .shop h3 {
+  margin-top: 5px;     /* slightly less top space */
+  margin-bottom: 20px;   /* reduce gap below heading */
+  text-align: center;
+  font-size: 1.75rem;
+  letter-spacing: 0.5px;
+}
+
+
+    /* centralize the products grid and make items equal */
+
+/* Optional: keep product grids looking balanced */
+body.hoodies-page .shop .products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;              /* balanced spacing between items */
+}
+
+    body.hoodies-page .shop .item {
+      width: 250px; /* consistent card width */
+      text-align: center;
+      background: #fff;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.08);
+      transition: transform .25s ease, box-shadow .25s ease;
+    }
+
+    body.hoodies-page .shop .item img {
+      width: 100%;
+      height: 230px;
+      object-fit: cover;
+      display: block;
+    }
+
+    body.hoodies-page .shop .item h3 { margin: 10px 0; font-size: 1.05rem; }
+    body.hoodies-page .shop .item p { color: #333; margin-bottom: 12px; }
+
+    /* button style kept consistent with main CSS but scoped */
+    body.hoodies-page .shop .item button {
+      background: #f9a825;
+      color: #fff;
+      border: none;
+      padding: 8px 14px;
+      border-radius: 6px;
+      margin: 0 0 16px;
+      cursor: pointer;
+    }
+    body.hoodies-page .shop .item button:hover { background: #333; }
+
+    /* responsive adjustments for small screens */
+    @media (max-width: 768px) {
+      body.hoodies-page .hero { height: 28vh; margin-top: 50px; }
+      body.hoodies-page .shop { padding: 20px; margin: 10px; }
+      body.hoodies-page .shop .item { width: 48%; }
+    }
+  </style>
+</head>
+<body class="hoodies-page">
+<header>
+  <div class="logo">
+    <img src="logo3.png" alt="logo">
+    <h1>VEROIR</h1>
+  </div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="login.html">Login</a>
+    <a href="signup.html">Sign Up</a>
+    <a href="cart.html">Cart <span class="cart-count" style="display:none"></span></a>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="hero-content">
+    <h2>Hoodies Collection</h2>
+    <p>Cozy & stylish hoodies for everyone.</p>
+  </div>
+</section>
+
+<section class="shop">
+  <h3>Men's Hoodies</h3>
+  <div class="products">
+    <div class="item"><img src="men hoodies.png" alt=""><h3>Classic Hoodie</h3><p>₹799</p><button data-id="classic-hoodie-799" data-name="Classic Hoodie" data-price="799" data-img="men hoodies.png" class="add-to-cart">Add to Cart</button></div>
+    <div class="item"><img src="oversized hoodie.png" alt=""><h3>Oversized Hoodie</h3><p>₹999</p><button data-id="oversized-hoodie-999" data-name="Oversized Hoodie" data-price="999" data-img="oversized hoodie.png" class="add-to-cart">Add to Cart</button></div>
+    <div class="item"><img src="chain hoodie.png" alt=""><h3>Zip Hoodie</h3><p>₹899</p><button data-id="zip-hoodie-899" data-name="Zip Hoodie" data-price="899" data-img="chain hoodie.png" class="add-to-cart">Add to Cart</button></div>
+    <div class="item"><img src="printed hoodie.png" alt=""><h3>Printed Hoodie</h3><p>₹1099</p><button data-id="printed-hoodie-1099" data-name="Printed Hoodie" data-price="1099" data-img="printed hoodie.png" class="add-to-cart">Add to Cart</button></div>
+  </div>
+
+  <h3>Women's Hoodies</h3>
+  <div class="products">
+    <div class="item"><img src="pullover hoodie.png" alt=""><h3>Pullover Hoodie</h3><p>₹999</p><button data-id="pullover-hoodie-999" data-name="Pullover Hoodie" data-price="999" data-img="pullover hoodie.png" class="add-to-cart">Add to Cart</button></div>
+    <div class="item"><img src="fur hoodies.png" alt=""><h3>Fur Hoodie</h3><p>₹1299</p><button data-id="fur-hoodie-1299" data-name="Fur Hoodie" data-price="1299" data-img="fur hoodies.png" class="add-to-cart">Add to Cart</button></div>
+    <div class="item"><img src="crop hoodie.png" alt=""><h3>Crop Hoodie</h3><p>₹899</p><button data-id="crop-hoodie-899" data-name="Crop Hoodie" data-price="899" data-img="crop hoodie.png" class="add-to-cart">Add to Cart</button></div>
+    <div class="item"><img src="sports hoodie.png" alt=""><h3>Sport Hoodie</h3><p>₹1099</p><button data-id="sport-hoodie-1099" data-name="Sport Hoodie" data-price="1099" data-img="sports hoodie.png" class="add-to-cart">Add to Cart</button></div>
+  </div>
+</section>
+
+ <footer>
+    <p>Contact us: veroir@gmail.com | +91 98765 43210</p>
+    <p>© 2025 veroir | Made for Students ❤️</p>
+  </footer>
+<script src="script.js"></script>
+</body>
+</html>

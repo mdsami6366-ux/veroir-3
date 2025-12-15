@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Jackets - VEROIR</title>
+
+  <link rel="stylesheet" href="style.css" />
+
+  <style>
+
+    body.jackets-page { }
+
+    body.jackets-page .hero {
+      position: relative;
+      height: 20vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      overflow: hidden;
+      background: url('https://images.unsplash.com/photo-1549057445-59871fcd8b2a?auto=format&fit=crop&w=1920&q=80')
+                  no-repeat center center/cover;
+      color: #222;
+      margin-top: 55px;
+    }
+
+    body.jackets-page .hero-content {
+      background: rgba(255,255,255,0.6);
+      padding: 15px 50px;
+      border-radius: 50px;
+      max-width: 700px;
+      color: #111;
+      margin-top: 0px;
+    }
+
+    body.jackets-page .hero-content h2 {
+      margin-top: 10px;
+      margin-bottom: 0;
+    }
+
+    body.jackets-page .hero-content p {
+      margin: 0;
+    }
+
+    body.jackets-page .shop {
+      padding: 30px 20px;
+      max-width: 1200px;
+      margin: 20px auto 60px;
+      background: rgba(255,255,255,0.35);
+      backdrop-filter: blur(6px);
+      border-radius: 12px;
+      margin-top: 10px;
+      padding-top: 20px;
+    }
+
+    body.jackets-page .shop h3 {
+      margin-top: 5px;
+      margin-bottom: 20px;
+      text-align: center;
+      font-size: 1.75rem;
+      letter-spacing: 0.5px;
+    }
+
+    body.jackets-page .shop .products {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 25px;
+    }
+
+    body.jackets-page .shop .item {
+      width: 250px;
+      text-align: center;
+      background: #fff;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.08);
+    }
+
+    body.jackets-page .shop .item img {
+      width: 100%;
+      height: 230px;
+      object-fit: cover;
+      display: block;
+    }
+
+    body.jackets-page .shop .item h3 {
+      margin: 10px 0;
+      font-size: 1.05rem;
+    }
+
+    body.jackets-page .shop .item p {
+      color: #333;
+      margin-bottom: 12px;
+    }
+
+    body.jackets-page .shop .item button {
+      background: #f9a825;
+      color: #fff;
+      border: none;
+      padding: 8px 14px;
+      border-radius: 6px;
+      margin: 0 0 16px;
+      cursor: pointer;
+    }
+
+    body.jackets-page .shop .item button:hover {
+      background: #333;
+    }
+
+    @media (max-width: 768px) {
+
+      body.jackets-page .hero {
+        height: 28vh;
+        margin-top: 50px;
+      }
+
+      body.jackets-page .shop {
+        padding: 20px;
+        margin: 10px;
+      }
+
+      body.jackets-page .shop .item {
+        width: 48%;
+      }
+
+    }
+
+  </style>
+
+</head>
+
+<body class="jackets-page">
+
+  <header>
+    <div class="logo">
+      <img src="logo3.png" alt="logo" />
+      <h1>VEROIR</h1>
+    </div>
+
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="login.html">Login</a>
+      <a href="signup.html">Sign Up</a>
+      <a href="cart.html">Cart <span class="cart-count" style="display:none"></span></a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h2>Jackets Collection</h2>
+      <p>Warm, stylish jackets for cool days.</p>
+    </div>
+  </section>
+
+  <section class="shop">
+
+    <h3>Men's Jackets</h3>
+
+    <div class="products">
+
+      <div class="item">
+        <img src="leather jacket.png" alt="" />
+        <h3>Leather Jacket</h3>
+        <p>₹2499</p>
+        <button data-id="leather-jacket-2499" data-name="Leather Jacket" data-price="2499" data-img="leather jacket.png" class="add-to-cart">Add to Cart</button>
+      </div>
+
+      <div class="item">
+        <img src="bomber jacket.png" alt="" />
+        <h3>Bomber Jacket</h3>
+        <p>₹1999</p>
+        <button data-id="bomber-jacket-1999" data-name="Bomber Jacket" data-price="1999" data-img="bomber jacket.png" class="add-to-cart">Add to Cart</button>
+      </div>
+
+      <div class="item">
+        <img src="parkajacket.png" alt="" />
+        <h3>Parka</h3>
+        <p>₹2999</p>
+        <button data-id="parka-2999" data-name="Parka" data-price="2999" data-img="parkajacket.png" class="add-to-cart">Add to Cart</button>
+      </div>
+
+      <div class="item">
+        <img src="wind breaker jacket.png" alt="" />
+        <h3>Windbreaker</h3>
+        <p>₹1499</p>
+        <button data-id="windbreaker-1499" data-name="Windbreaker" data-price="1499" data-img="wind breaker jacket.png" class="add-to-cart">Add to Cart</button>
+      </div>
+
+    </div>
+
+    <h3>Women's Jackets</h3>
+
+    <div class="products">
+
+      <div class="item">
+        <img src="trenchcoat.png" alt="" />
+        <h3>Trench Coat</h3>
+        <p>₹2799</p>
+        <button data-id="trench-coat-2799" data-name="Trench Coat" data-price="2799" data-img="trenchcoat.png" class="add-to-cart">Add to Cart</button>
+      </div>
+
+      <div class="item">
+        <img src="fur jacket.png" alt="" />
+        <h3>Faux Fur</h3>
+        <p>₹2499</p>
+        <button data-id="faux-fur-2499" data-name="Faux Fur" data-price="2499" data-img="fur jacket.png" class="add-to-cart">Add to Cart</button>
+      </div>
+
+      <div class="item">
+        <img src="puffer jacket.png" alt="" />
+        <h3>Puffer Jacket</h3>
+        <p>₹1999</p>
+        <button data-id="puffer-jacket-1999" data-name="Puffer Jacket" data-price="1999" data-img="puffer jacket.png" class="add-to-cart">Add to Cart</button>
+      </div>
+
+      <div class="item">
+        <img src="denim jacket f.png" alt="" />
+        <h3>Denim Jacket</h3>
+        <p>₹1799</p>
+        <button data-id="denim-jacket-1799" data-name="Denim Jacket" data-price="1799" data-img="denim jacket f.png" class="add-to-cart">Add to Cart</button>
+      </div>
+
+    </div>
+
+  </section>
+
+   <footer>
+    <p>Contact us: veroir@gmail.com | +91 98765 43210</p>
+    <p>© 2025 veroir | Made for Students ❤️</p>
+  </footer>
+<script src="script.js"></script>
+</body>
+
+</html>

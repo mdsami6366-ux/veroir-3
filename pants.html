@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Pants - VEROIR</title>
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+
+    body.pants-page {
+    }
+
+    body.pants-page .hero {
+      position: relative;
+      height: 20vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      overflow: hidden;
+      background: url('https://images.unsplash.com/photo-1530845642130-1f0c5fd7d6ed?auto=format&fit=crop&w=1920&q=80') no-repeat center center/cover;
+      color: #222;
+      margin-top: 55px;
+    }
+
+    body.pants-page .hero-content {
+      background: rgba(255,255,255,0.6);
+      padding: 15px 50px;
+      border-radius: 50px;
+      max-width: 700px;
+      color: #111;
+      margin-top: 0px;
+    }
+
+    body.pants-page .hero-content h2 {
+      margin-top: 10px;
+      margin-bottom: 0;
+    }
+
+    body.pants-page .hero-content p {
+      margin: 0;
+    }
+
+    body.pants-page .shop {
+      padding: 30px 20px;
+      max-width: 1200px;
+      margin: 20px auto 60px;
+      background: rgba(255,255,255,0.35);
+      backdrop-filter: blur(6px);
+      border-radius: 12px;
+      margin-top: 10px;
+      padding-top: 20px;
+    }
+
+    body.pants-page .shop h3 {
+      margin-top: 5px;
+      margin-bottom: 20px;
+      text-align: center;
+      font-size: 1.75rem;
+      letter-spacing: 0.5px;
+    }
+
+    body.pants-page .shop .products {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 25px;
+    }
+
+    body.pants-page .shop .item {
+      width: 250px;
+      text-align: center;
+      background: #fff;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.08);
+    }
+
+    body.pants-page .shop .item img {
+      width: 100%;
+      height: 230px;
+      object-fit: cover;
+      display: block;
+    }
+
+    body.pants-page .shop .item h3 {
+      margin: 10px 0;
+      font-size: 1.05rem;
+    }
+
+    body.pants-page .shop .item p {
+      color: #333;
+      margin-bottom: 12px;
+    }
+
+    body.pants-page .shop .item button {
+      background: #f9a825;
+      color: #fff;
+      border: none;
+      padding: 8px 14px;
+      border-radius: 6px;
+      margin: 0 0 16px;
+      cursor: pointer;
+    }
+
+    body.pants-page .shop .item button:hover {
+      background: #333;
+    }
+
+    @media (max-width:768px) {
+
+      body.pants-page .hero {
+        height: 28vh;
+        margin-top: 50px;
+      }
+
+      body.pants-page .shop {
+        padding: 20px;
+        margin: 10px;
+      }
+
+      body.pants-page .shop .item {
+        width: 48%;
+      }
+
+    }
+
+  </style>
+</head>
+
+<body class="pants-page">
+
+  <header>
+    <div class="logo">
+      <img src="logo3.png" alt="logo">
+      <h1>VEROIR</h1>
+    </div>
+
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="login.html">Login</a>
+      <a href="signup.html">Sign Up</a>
+      <a href="cart.html">Cart <span class="cart-count" style="display:none"></span></a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h2>Pants Collection</h2>
+      <p>Comfortable and stylish pants for campus life.</p>
+    </div>
+  </section>
+
+  <section class="shop">
+
+    <h3>Men's Pants</h3>
+
+    <div class="products">
+      <div class="item">
+        <img src="chinos.png" alt="">
+        <h3>Chinos</h3>
+        <p>₹999</p>
+        <button data-id="chinos-999" data-name="Chinos" data-price="999" data-img="chinos.png" class="add-to-cart">Add to Cart</button>
+      </div>
+
+      <div class="item">
+        <img src="joggersmen.png" alt="">
+        <h3>Joggers</h3>
+        <p>₹899</p>
+        <button data-id="joggers-899" data-name="Joggers" data-price="899" data-img="joggersmen.png" class="add-to-cart">Add to Cart</button>
+      </div>
+
+      <div class="item">
+        <img src="denim.png" alt="">
+        <h3>Denim</h3>
+        <p>₹1199</p>
+        <button data-id="denim-1199" data-name="Denim" data-price="1199" data-img="denim.png" class="add-to-cart">Add to Cart</button>
+      </div>
+
+      <div class="item">
+        <img src="formal trousers.png" alt="">
+        <h3>Formal Trousers</h3>
+        <p>₹1299</p>
+        <button data-id="formal-trousers-1299" data-name="Formal Trousers" data-price="1299" data-img="formal trousers.png" class="add-to-cart">Add to Cart</button>
+      </div>
+    </div>
+
+    <h3>Women's Pants</h3>
+
+    <div class="products">
+
+      <div class="item">
+        <img src="leggings.png" alt="">
+        <h3>Leggings</h3>
+        <p>₹799</p>
+        <button data-id="leggings-799" data-name="Leggings" data-price="799" data-img="leggings.png" class="add-to-cart">Add to Cart</button>
+      </div>
+
+      <div class="item">
+        <img src="cullotes pant.png" alt="">
+        <h3>Culottes</h3>
+        <p>₹899</p>
+        <button data-id="culottes-899" data-name="Culottes" data-price="899" data-img="cullotes pant.png" class="add-to-cart">Add to Cart</button>
+      </div>
+
+      <div class="item">
+        <img src="slim pants f.png" alt="">
+        <h3>Slim Pants</h3>
+        <p>₹999</p>
+        <button data-id="slim-pants-999" data-name="Slim Pants" data-price="999" data-img="slim pants f.png" class="add-to-cart">Add to Cart</button>
+      </div>
+
+      <div class="item">
+        <img src="crop pant f.png" alt="">
+        <h3>Cropped Pants</h3>
+        <p>₹899</p>
+        <button data-id="cropped-pants-899" data-name="Cropped Pants" data-price="899" data-img="crop pant f.png" class="add-to-cart">Add to Cart</button>
+      </div>
+
+    </div>
+
+  </section>
+
+   <footer>
+    <p>Contact us: veroir@gmail.com | +91 98765 43210</p>
+    <p>© 2025 veroir | Made for Students ❤️</p>
+  </footer>
+
+<script src="script.js"></script>
+</body>
+</html>

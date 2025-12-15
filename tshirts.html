@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>T-Shirts - VEROIR</title>
+  <link rel="stylesheet" href="style.css" />
+
+  <style>
+
+    body.tshirts-page { }
+
+    body.tshirts-page .hero {
+      position: relative;
+      height: 20vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      overflow: hidden;
+      background: url('your-background-image-url-here') no-repeat center center/cover;
+      color: #222;
+      margin-top: 55px;
+    }
+
+    /* remove unwanted color overlay (extra banner) */
+    body.tshirts-page .hero::before {
+      content: none;
+    }
+
+    body.tshirts-page .hero-content {
+      background: rgba(255,255,255,0.6);
+      padding: 15px 50px;
+      border-radius: 50px;
+      max-width: 700px;
+      color: #111;
+      margin-top: 0px;
+    }
+
+    body.tshirts-page .hero-content h2 {
+      margin-top: 10px;
+      margin-bottom: 0;
+    }
+
+    body.tshirts-page .hero-content p {
+      margin: 0;
+    }
+
+    body.tshirts-page .shop {
+      padding: 30px 20px;
+      max-width: 1200px;
+      margin: 20px auto 60px;
+      background: rgba(255,255,255,0.35);
+      backdrop-filter: blur(6px);
+      border-radius: 12px;
+      margin-top: 10px;
+      padding-top: 20px;
+    }
+
+    body.tshirts-page .shop h3 {
+      margin-top: 5px;
+      margin-bottom: 20px;
+      text-align: center;
+      font-size: 1.75rem;
+      letter-spacing: 0.5px;
+    }
+
+    body.tshirts-page .shop .products {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 25px;
+    }
+
+    body.tshirts-page .shop .item {
+      width: 250px;
+      text-align: center;
+      background: #fff;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.08);
+    }
+
+    body.tshirts-page .shop .item img {
+      width: 100%;
+      height: 230px;
+      object-fit: cover;
+      display: block;
+    }
+
+    body.tshirts-page .shop .item h3 {
+      margin: 10px 0;
+      font-size: 1.05rem;
+    }
+
+    body.tshirts-page .shop .item p {
+      color: #333;
+      margin-bottom: 12px;
+    }
+
+    body.tshirts-page .shop .item button {
+      background: #f9a825;
+      color: #fff;
+      border: none;
+      padding: 8px 14px;
+      border-radius: 6px;
+      margin: 0 0 16px;
+      cursor: pointer;
+    }
+
+    body.tshirts-page .shop .item button:hover {
+      background: #333;
+    }
+
+    @media (max-width: 768px) {
+      body.tshirts-page .hero {
+        height: 28vh;
+        margin-top: 50px;
+      }
+      body.tshirts-page .shop {
+        padding: 20px;
+        margin: 10px;
+      }
+      body.tshirts-page .shop .item {
+        width: 48%;
+      }
+    }
+
+  </style>
+</head>
+
+<body class="tshirts-page">
+
+  <header>
+    <div class="logo">
+      <img src="logo3.png" alt="logo" />
+      <h1>VEROIR</h1>
+    </div>
+
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="login.html">Login</a>
+      <a href="signup.html">Sign Up</a>
+      <a href="cart.html">Cart <span class="cart-count" style="display:none"></span></a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h2>T-Shirts Collection</h2>
+      <p>Casual & graphic tees for daily wear.</p>
+    </div>
+  </section>
+
+  <section class="shop">
+
+    <h3>Men's T-Shirts</h3>
+
+    <div class="products">
+
+      <div class="item">
+        <img src="graphic tshirt.png" alt="" />
+        <h3>Graphic Tee</h3>
+        <p>₹499</p>
+        <button data-id="graphic-tee-499" data-name="Graphic Tee" data-price="499" data-img="graphic tshirt.png" class="add-to-cart">Add to Cart</button>
+      </div>
+
+      <div class="item">
+        <img src="vneck tshirt.png" alt="" />
+        <h3>V-Neck Tee</h3>
+        <p>₹399</p>
+        <button data-id="vneck-tee-399" data-name="V-Neck Tee" data-price="399" data-img="vneck tshirt.png" class="add-to-cart">Add to Cart</button>
+      </div>
+
+      <div class="item">
+        <img src="stripped tshirt.png" alt="" />
+        <h3>Striped Tee</h3>
+        <p>₹449</p>
+        <button data-id="striped-tee-449" data-name="Striped Tee" data-price="449" data-img="stripped tshirt.png" class="add-to-cart">Add to Cart</button>
+      </div>
+
+      <div class="item">
+        <img src="t-shirt .main.png" alt="" />
+        <h3>Plain Tee</h3>
+        <p>₹299</p>
+        <button data-id="plain-tee-299" data-name="Plain Tee" data-price="299" data-img="t-shirt .main.png" class="add-to-cart">Add to Cart</button>
+      </div>
+
+    </div>
+
+    <h3>Women's T-Shirts</h3>
+
+    <div class="products">
+
+      <div class="item">
+        <img src="croptshirt f.png" alt="" />
+        <h3>Cropped Tee</h3>
+        <p>₹449</p>
+        <button data-id="cropped-tee-449" data-name="Cropped Tee" data-price="449" data-img="croptshirt f.png" class="add-to-cart">Add to Cart</button>
+      </div>
+
+      <div class="item">
+        <img src="slogan tshirt f.png" alt="" />
+        <h3>Slogan Tee</h3>
+        <p>₹499</p>
+        <button data-id="slogan-tee-499" data-name="Slogan Tee" data-price="499" data-img="slogan tshirt f.png" class="add-to-cart">Add to Cart</button>
+      </div>
+
+      <div class="item">
+        <img src="vintage tshirt.png" alt="" />
+        <h3>Vintage Tee</h3>
+        <p>₹549</p>
+        <button data-id="vintage-tee-549" data-name="Vintage Tee" data-price="549" data-img="vintage tshirt.png" class="add-to-cart">Add to Cart</button>
+      </div>
+
+      <div class="item">
+        <img src="graphic tshirt.png" alt="" />
+        <h3>Oversized Tee</h3>
+        <p>₹599</p>
+        <button data-id="oversized-tee-599" data-name="Oversized Tee" data-price="599" data-img="graphic tshirt.png" class="add-to-cart">Add to Cart</button>
+      </div>
+
+    </div>
+
+  </section>
+
+   <footer>
+    <p>Contact us: veroir@gmail.com | +91 98765 43210</p>
+    <p>© 2025 veroir | Made for Students ❤️</p>
+  </footer>
+
+<script src="script.js"></script>
+</body>
+</html>

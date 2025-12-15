@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Accessories - VEROIR</title>
+
+  <link rel="stylesheet" href="style.css" />
+
+  <style>
+
+    body.accessories-page { }
+
+    body.accessories-page .hero {
+      position: relative;
+      height: 20vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      overflow: hidden;
+      background: url('your-background-image-url-here')
+                  no-repeat center center/cover;
+      color: #222;
+      margin-top: 55px;
+    }
+
+    body.accessories-page .hero::before {
+      content: none;
+    }
+
+    body.accessories-page .hero-content {
+      background: rgba(255,255,255,0.6);
+      padding: 15px 50px;
+      border-radius: 50px;
+      max-width: 700px;
+      color: #111;
+      margin-top: 0px;
+    }
+
+    body.accessories-page .hero-content h2 {
+      margin-top: 10px;
+      margin-bottom: 0;
+    }
+
+    body.accessories-page .hero-content p {
+      margin: 0;
+    }
+
+    body.accessories-page .shop {
+      padding: 30px 20px;
+      max-width: 1200px;
+      margin: 20px auto 60px;
+      background: rgba(255,255,255,0.35);
+      backdrop-filter: blur(6px);
+      border-radius: 12px;
+      margin-top: 10px;
+      padding-top: 20px;
+    }
+
+    body.accessories-page .shop h3 {
+      margin-top: 5px;
+      margin-bottom: 20px;
+      text-align: center;
+      font-size: 1.75rem;
+      letter-spacing: 0.5px;
+    }
+
+    body.accessories-page .shop .products {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 25px;
+    }
+
+    body.accessories-page .shop .item {
+      width: 250px;
+      text-align: center;
+      background: #fff;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.08);
+    }
+
+    body.accessories-page .shop .item img {
+      width: 100%;
+      height: 230px;
+      object-fit: cover;
+      display: block;
+    }
+
+    body.accessories-page .shop .item h3 {
+      margin: 10px 0;
+      font-size: 1.05rem;
+    }
+
+    body.accessories-page .shop .item p {
+      color: #333;
+      margin-bottom: 12px;
+    }
+
+    body.accessories-page .shop .item button {
+      background: #f9a825;
+      color: #fff;
+      border: none;
+      padding: 8px 14px;
+      border-radius: 6px;
+      margin: 0 0 16px;
+      cursor: pointer;
+    }
+
+    body.accessories-page .shop .item button:hover {
+      background: #333;
+    }
+
+    @media (max-width: 768px) {
+
+      body.accessories-page .hero {
+        height: 28vh;
+        margin-top: 50px;
+      }
+
+      body.accessories-page .shop {
+        padding: 20px;
+        margin: 10px;
+      }
+
+      body.accessories-page .shop .item {
+        width: 48%;
+      }
+
+    }
+
+  </style>
+
+</head>
+
+<body class="accessories-page">
+
+  <header>
+    <div class="logo">
+      <img src="logo3.png" alt="logo" />
+      <h1>VEROIR</h1>
+    </div>
+
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="login.html">Login</a>
+      <a href="signup.html">Sign Up</a>
+      <a href="cart.html">Cart <span class="cart-count" style="display:none"></span></a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h2>Accessories</h2>
+      <p>Hats, bags, caps and essentials to finish your look.</p>
+    </div>
+  </section>
+
+  <section class="shop">
+
+    <h3>Men's Accessories</h3>
+
+    <div class="products">
+
+      <div class="item">
+        <img src="cap.png" alt="" />
+        <h3>Classic Cap</h3>
+        <p>₹299</p>
+        <button data-id="classic-cap-299" data-name="Classic Cap" data-price="299" data-img="cap.png" class="add-to-cart">Add to Cart</button>
+      </div>
+
+      <div class="item">
+        <img src="belt.png" alt="" />
+        <h3>Leather Belt</h3>
+        <p>₹499</p>
+        <button data-id="leather-belt-499" data-name="Leather Belt" data-price="499" data-img="belt.png" class="add-to-cart">Add to Cart</button>
+      </div>
+
+      <div class="item">
+        <img src="messanger bag.png" alt="" />
+        <h3>Messenger Bag</h3>
+        <p>₹1299</p>
+        <button data-id="messenger-bag-1299" data-name="Messenger Bag" data-price="1299" data-img="messanger bag.png" class="add-to-cart">Add to Cart</button>
+      </div>
+
+      <div class="item">
+        <img src="socks pair.png" alt="" />
+        <h3>Socks Pack</h3>
+        <p>₹199</p>
+        <button data-id="socks-pack-199" data-name="Socks Pack" data-price="199" data-img="socks pair.png" class="add-to-cart">Add to Cart</button>
+      </div>
+
+    </div>
+
+    <h3>Women's Accessories</h3>
+
+    <div class="products">
+
+      <div class="item">
+        <img src="strawbag.png" alt="" />
+        <h3>Straw Bag</h3>
+        <p>₹899</p>
+        <button data-id="straw-bag-899" data-name="Straw Bag" data-price="899" data-img="strawbag.png" class="add-to-cart">Add to Cart</button>
+      </div>
+
+      <div class="item">
+        <img src="scarf.png" alt="" />
+        <h3>Scarf</h3>
+        <p>₹399</p>
+        <button data-id="scarf-399" data-name="Scarf" data-price="399" data-img="scarf.png" class="add-to-cart">Add to Cart</button>
+      </div>
+
+      <div class="item">
+        <img src="earings.png" alt="" />
+        <h3>Statement Earrings</h3>
+        <p>₹699</p>
+        <button data-id="statement-earrings-699" data-name="Statement Earrings" data-price="699" data-img="earings.png" class="add-to-cart">Add to Cart</button>
+      </div>
+
+      <div class="item">
+        <img src="hair clip.png" alt="" />
+        <h3>Hair Clips</h3>
+        <p>₹249</p>
+        <button data-id="hair-clips-249" data-name="Hair Clips" data-price="249" data-img="hair clip.png" class="add-to-cart">Add to Cart</button>
+      </div>
+
+    </div>
+
+  </section>
+
+   <footer>
+    <p>Contact us: veroir@gmail.com | +91 98765 43210</p>
+    <p>© 2025 veroir | Made for Students ❤️</p>
+  </footer>
+
+<script src="script.js"></script>
+</body>
+
+</html>

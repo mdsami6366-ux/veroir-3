@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shirts - VEROIR</title>
+  <link rel="stylesheet" href="style.css" />
+
+  <style>
+
+    body.shirts-page { }
+
+    body.shirts-page .hero {
+      position: relative;
+      height: 20vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      overflow: hidden;
+      background: url('https://images.unsplash.com/photo-1520975698512-4d3b4a5d3c4b?auto=format&fit=crop&w=1920&q=80')
+        no-repeat center center/cover;
+      color: #222;
+      margin-top: 55px;
+    }
+
+    body.shirts-page .hero-content {
+      background: rgba(255,255,255,0.6);
+      padding: 15px 50px;
+      border-radius: 50px;
+      max-width: 700px;
+      color: #111;
+      margin-top: 0px;
+    }
+
+    body.shirts-page .hero-content h2 {
+      margin-top: 10px;
+      margin-bottom: 0px;
+    }
+
+    body.shirts-page .hero-content p {
+      margin-top: 0px;
+      margin-bottom: 0px;
+    }
+
+    body.shirts-page .shop {
+      padding: 30px 20px;
+      max-width: 1200px;
+      margin: 20px auto 60px;
+      background: rgba(255,255,255,0.35);
+      backdrop-filter: blur(6px);
+      border-radius: 12px;
+      margin-top: 10px;
+      padding-top: 20px;
+    }
+
+    body.shirts-page .shop h3 {
+      margin-top: 5px;
+      margin-bottom: 20px;
+      text-align: center;
+      font-size: 1.75rem;
+      letter-spacing: 0.5px;
+    }
+
+    body.shirts-page .shop .products {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 25px;
+    }
+
+    body.shirts-page .shop .item {
+      width: 250px;
+      text-align: center;
+      background: #fff;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.08);
+      transition: transform .25s ease, box-shadow .25s ease;
+    }
+
+    body.shirts-page .shop .item img {
+      width: 100%;
+      height: 230px;
+      object-fit: cover;
+      display: block;
+    }
+
+    body.shirts-page .shop .item h3 {
+      margin: 10px 0;
+      font-size: 1.05rem;
+    }
+
+    body.shirts-page .shop .item p {
+      color: #333;
+      margin-bottom: 12px;
+    }
+
+    body.shirts-page .shop .item button {
+      background: #f9a825;
+      color: #fff;
+      border: none;
+      padding: 8px 14px;
+      border-radius: 6px;
+      margin: 0 0 16px;
+      cursor: pointer;
+    }
+
+    body.shirts-page .shop .item button:hover {
+      background: #333;
+    }
+
+    @media (max-width: 768px) {
+      body.shirts-page .hero {
+        height: 28vh;
+        margin-top: 50px;
+      }
+      body.shirts-page .shop {
+        padding: 20px;
+        margin: 10px;
+      }
+      body.shirts-page .shop .item {
+        width: 48%;
+      }
+    }
+
+  </style>
+
+</head>
+
+<body class="shirts-page">
+
+  <header>
+    <div class="logo">
+      <img src="logo3.png" alt="logo" />
+      <h1>VEROIR</h1>
+    </div>
+
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="login.html">Login</a>
+      <a href="signup.html">Sign Up</a>
+      <a href="cart.html">Cart <span class="cart-count" style="display:none"></span></a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h2>Shirts Collection</h2>
+      <p>Smart, casual & formal shirts for every occasion.</p>
+    </div>
+  </section>
+
+  <section class="shop">
+
+    <h3>Men's Shirts</h3>
+
+    <div class="products">
+
+      <div class="item">
+        <img src="oxford shirt.png" alt="" />
+        <h3>Oxford Shirt</h3>
+        <p>₹699</p>
+        <button data-id="oxford-shirt-699" data-name="Oxford Shirt" data-price="699" data-img="oxford shirt.png" class="add-to-cart">Add to Cart</button>
+      </div>
+
+      <div class="item">
+        <img src="denimshirt.png" alt="" />
+        <h3>Denim Shirt</h3>
+        <p>₹799</p>
+        <button data-id="denim-shirt-799" data-name="Denim Shirt" data-price="799" data-img="denimshirt.png" class="add-to-cart">Add to Cart</button>
+      </div>
+
+      <div class="item">
+        <img src="lilen shirt.png" alt="" />
+        <h3>Casual Linen</h3>
+        <p>₹899</p>
+        <button data-id="casual-linen-899" data-name="Casual Linen" data-price="899" data-img="lilen shirt.png" class="add-to-cart">Add to Cart</button>
+      </div>
+
+      <div class="item">
+        <img src="formalshirt.png" alt="" />
+        <h3>Formal Shirt</h3>
+        <p>₹999</p>
+        <button data-id="formal-shirt-999" data-name="Formal Shirt" data-price="999" data-img="formalshirt.png" class="add-to-cart">Add to Cart</button>
+      </div>
+
+    </div>
+
+    <h3>Women's Shirts</h3>
+
+    <div class="products">
+
+      <div class="item">
+        <img src="silkblouse.png" alt="" />
+        <h3>Silk Blouse</h3>
+        <p>₹899</p>
+        <button data-id="silk-blouse-899" data-name="Silk Blouse" data-price="899" data-img="silkblouse.png" class="add-to-cart">Add to Cart</button>
+      </div>
+
+      <div class="item">
+        <img src="floral shirt.png" alt="" />
+        <h3>Floral Shirt</h3>
+        <p>₹799</p>
+        <button data-id="floral-shirt-799" data-name="Floral Shirt" data-price="799" data-img="floral shirt.png" class="add-to-cart">Add to Cart</button>
+      </div>
+
+      <div class="item">
+        <img src="button up shirt.png" alt="" />
+        <h3>Button-up</h3>
+        <p>₹699</p>
+        <button data-id="buttonup-699" data-name="Button-up" data-price="699" data-img="button up shirt.png" class="add-to-cart">Add to Cart</button>
+      </div>
+
+      <div class="item">
+        <img src="tunic.png" alt="" />
+        <h3>Casual Tunic</h3>
+        <p>₹899</p>
+        <button data-id="casual-tunic-899" data-name="Casual Tunic" data-price="899" data-img="tunic.png" class="add-to-cart">Add to Cart</button>
+      </div>
+
+    </div>
+
+  </section>
+
+  <footer>
+    <p>Contact us: veroir@gmail.com | +91 98765 43210</p>
+    <p>© 2025 veroir | Made for Students ❤️</p>
+  </footer>
+
+<script src="script.js"></script>
+</body>
+</html>
